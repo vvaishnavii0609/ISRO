@@ -1,0 +1,52 @@
+/* styles3.css timeine */
+body {
+    font-family:sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .event {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  
+  .event-date {
+    background-color:black;
+    color:black;
+    font-weight: bold;
+    padding: 1rem;
+    min-width: 100px;
+    text-align: center;
+    background-size: cover;
+  }
+  
+  .event-content {
+    flex: 1;
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    color: black;
+  }
+  
+  p {
+    margin-top: 0.5rem;
+  }

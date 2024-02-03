@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    background-color: black;
+}
+
+.main{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    width: 1px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0vw -23vh 1px 1px #fff,-11vw -5vh 1px 1px #fff,17vw 41vh 2px 3px #fff,12vw 21vh 1px 2px #fff,-2vw -49vh 0px 0px #fff,-24vw 41vh 0px 2px #fff,8vw -7vh 3px 1px #fff,5vw 7vh 3px 2px #fff,20vw -41vh 0px 1px #fff,-24vw -28vh 0px 1px #fff,38vw -25vh 3px 2px #fff,19vw -10vh 3px 1px #fff,-44vw -2vh 0px 3px #fff,-18vw 39vh 0px 1px #fff,1vw -44vh 3px 3px #fff,-6vw -11vh 0px 1px #fff,-33vw 3vh 0px 3px #fff,-19vw 18vh 3px 0px #fff,0vw 29vh 3px 1px #fff,39vw -10vh 0px 1px #fff,14vw -17vh 0px 2px #fff,39vw -22vh 2px 0px #fff,25vw 9vh 2px 0px #fff,5vw -3vh 1px 0px #fff,10vw -34vh 2px 2px #fff,38vw -34vh 0px 0px #fff,-17vw 22vh 1px 1px #fff,0vw 15vh 3px 3px #fff,-23vw -26vh 0px 3px #fff,-34vw -15vh 0px 0px #fff,21vw 40vh 3px 3px #fff,-9vw 47vh 2px 1px #fff,-10vw 31vh 1px 2px #fff,35vw -48vh 1px 0px #fff,16vw 29vh 3px 0px #fff,-36vw -33vh 1px 1px #fff,-19vw -45vh 1px 3px #fff,34vw 46vh 2px 0px #fff,33vw 21vh 0px 1px #fff,-41vw -47vh 3px 2px #fff,-44vw -20vh 2px 2px #fff,34vw -12vh 2px 0px #fff,-3vw -32vh 3px 0px #fff,-9vw 2vh 1px 2px #fff,20vw -33vh 0px 3px #fff,47vw 46vh 3px 1px #fff,-38vw -35vh 2px 1px #fff,41vw 14vh 2px 0px #fff,-38vw -28vh 3px 0px #fff,-46vw -25vh 3px 0px #fff,-2vw -41vh 3px 0px #fff,-2vw 3vh 3px 1px #fff,16vw 37vh 0px 2px #fff,-5vw 41vh 1px 0px #fff,-13vw 25vh 1px 2px #fff,-37vw -39vh 0px 0px #fff,17vw 7vh 3px 3px #fff,-6vw 30vh 0px 1px #fff,-2vw -15vh 0px 0px #fff,0vw -50vh 3px 2px #fff,-8vw -49vh 1px 2px #fff,-2vw -18vh 0px 0px #fff,-5vw 32vh 3px 2px #fff,-47vw -10vh 2px 0px #fff,-15vw -11vh 0px 2px #fff,-7vw 38vh 0px 3px #fff,41vw -31vh 2px 3px #fff,-22vw -30vh 2px 2px #fff,26vw 25vh 0px 3px #fff,-18vw 13vh 2px 2px #fff,28vw 18vh 3px 0px #fff,28vw -50vh 2px 2px #fff,-32vw 8vh 0px 2px #fff,34vw -5vh 0px 2px #fff,-29vw 22vh 3px 1px #fff,-18vw 1vh 3px 0px #fff,12vw -5vh 1px 3px #fff,-37vw 28vh 1px 1px #fff,31vw -26vh 0px 2px #fff,36vw 40vh 0px 2px #fff,-38vw 24vh 2px 0px #fff,-2vw -33vh 2px 1px #fff,50vw 46vh 3px 1px #fff,31vw -34vh 3px 1px #fff,35vw 12vh 2px 1px #fff,-40vw 40vh 0px 0px #fff,16vw -30vh 0px 2px #fff,-3vw 34vh 0px 3px #fff,-34vw 45vh 0px 1px #fff,-18vw -4vh 1px 1px #fff,-2vw 5vh 2px 0px #fff,-14vw 31vh 0px 0px #fff,-12vw -40vh 1px 1px #fff,41vw -9vh 3px 0px #fff,-3vw -27vh 3px 0px #fff,-26vw -12vh 2px 3px #fff,42vw 26vh 3px 3px #fff,-2vw -31vh 0px 0px #fff,-39vw -46vh 1px 0px #fff,-44vw 16vh 3px 3px #fff;
+    animation: zoom 5s alternate infinite;
+    overflow-y: hidden;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px, 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 100;
+  
+    margin-top: 5px;
+}
+
+.logo{
+    height: 90px;
+    width: 90px;
+    display: flex;
+    color: white;
+    pointer-events: none;
+    margin-right: 270px;
+    margin-left: 20px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+.navigation a:hover, 
+.navigation a.active{
+    background: white;
+    color: black;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text{
+    top: 400px;
+    position: absolute;
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.867);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-align: center;
+    cursor: none;
+
+}
+
+.parallax img{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec{
+    position: relative;
+    background-color: black;
+    padding: 100px;
+    height: 900px;
+}
+
+
+
+body::-webkit-scrollbar{
+    display: none;
+}
+/* 
+.row{
+    width: 100%;
+    bottom: 0;
+    height: 200px;
+    background-color: black;
+    z-index: 100;
+} */
+
+.row p{
+    color: #f9f9f9;
+}
+
+.sec2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+
+}
+
+.card{
+    height: 350px;
+    width:250px;
+    border-radius: 20px;box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    color: #ffff;
+   display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.footer-panel1{
+    background-color: #4b4b4b;
+    color: white;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.footer{
+margin-top: 15px;
+bottom: 0;
+}
+
+.footer-panel2{
+background-color: #393939;
+color: white;
+height: 500px;
+display: flex;
+justify-content: space-evenly;
+
+}
+
+ul a{
+display: block;
+font-size: 0.85 rem;
+margin-top: 10px;
+color: #dddddd;
+margin-top: 10px;
+}
+
+ul{
+margin-top: 20px;
+}
+
+ul p{
+font-weight: 700;
+font: bold;
+}
+.foot-panel3{
+background-color:#222f3d;
+color: white;
+border-top: 0.5px solid white ;
+height: 70px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* .logo{
+background-image: url("amazon_logo.png");
+background-size: cover;
+height: 50px;
+width: 100px;
+} */
+
+.foot-panel4{
+background-color: #0f1111;
+color: white;
+height: 80px;
+font-size:0.7rem;   
+text-align: center;
+}
+
+.pages{
+padding-top: 25px;
+}
+
+.copyright{
+padding-top: 5px;
+}
